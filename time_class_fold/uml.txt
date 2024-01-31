@@ -1,0 +1,49 @@
+@startuml
+
+class Time {
+    - hours: int
+    - minutes: int
+    - seconds: int
+    + Time(hoursVal: int, minutesVal: int, secondsVal: int)
+    + getHours(): int
+    + getMinutes(): int
+    + getSeconds(): int
+    + setHours(hoursVal: int): void
+    + setMinutes(minutesVal: int): void
+    + setSeconds(secondsVal: int): void
+    + toSeconds(): void
+    + toHours(): void
+    + toMinutes(): void
+    + toString(): string
+    + operator +(other: Time): Time
+    + operator -(other: Time): Time
+}
+
+@enduml
+
++-------------+
+|    Time     |
++-------------+
+| - hours     |
+| - minutes   |
+| - seconds   |
++-------------+
+| + Time()                    |
+| + Time(hours: int,          |
+|          minutes: int,      |
+|          seconds: int)      |
+| + getHours(): int           |
+| + getMinutes(): int         |
+| + getSeconds(): int         |
+| + setHours(hoursVal: int)   |
+| + setMinutes(minutesVal: int) |
+| + setSeconds(secondsVal: int) |
+| + toSeconds()               |
+| + toMinutes()               |
+| + toHours()                 |
+| + toString(): string        |
+| + operator+(other: Time)    |
+| + operator-(other: Time)    |
++-----------------------------+
+
+

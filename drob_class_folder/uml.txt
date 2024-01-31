@@ -1,0 +1,18 @@
+class Fraction {
+  - numerator: int
+  - denominator: int
+  
+  + Fraction(num: int, denom: int)
+  + getNumerator(): int
+  + setNumerator(num: int): void
+  + getDenominator(): int
+  + setDenominator(denom: int): void
+  + simplify(): void
+  + greatestCommonDivisor(a: int, b: int): int
+  + operator+(other: Fraction): Fraction
+  + operator-(other: Fraction): Fraction
+  + operator*(other: Fraction): Fraction
+  + operator/(other: Fraction): Fraction
+  + operator==(other: Fraction): bool
+}
+

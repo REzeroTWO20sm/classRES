@@ -1,0 +1,58 @@
+@startuml
+
+class Vector {
+    - x: double
+    - y: double
+    - z: double
+    + Vector(xVal: double, yVal: double, zVal: double)
+    + getX(): double
+    + getY(): double
+    + getZ(): double
+    + setX(xVal: double): void
+    + setY(yVal: double): void
+    + setZ(zVal: double): void
+    + length(): double
+    + angleWithAxis(axis: char): double
+    + operator+(other: Vector): Vector
+    + operator-(other: Vector): Vector
+    + operator*(scalar: double): Vector
+    + operator==(other: Vector): bool
+}
+
+class Main {
+    + main(): int
+}
+
+Vector --> Main
+
+@enduml
+
+  +----------------------------------+
+  |              Vector              |
+  +----------------------------------+
+  | - x: double                      |
+  | - y: double                      |
+  | - z: double                      |
+  +----------------------------------+
+  | + Vector(xVal: double,           |
+  |          yVal: double,           |
+  |          zVal: double)           |
+  | + getX(): double                 |
+  | + getY(): double                 |
+  | + getZ(): double                 |
+  | + setX(xVal: double): void       |
+  | + setY(yVal: double): void       |
+  | + setZ(zVal: double): void       |
+  | + length(): double               |
+  | + angleWithAxis(axis: char): double |
+  | + operator+(other: Vector): Vector |
+  | + operator-(other: Vector): Vector |
+  | + operator*(scalar: double): Vector |
+  | + operator==(other: Vector): bool |
+  +----------------------------------+
+  |           Main Program           |
+  +----------------------------------+
+  | + main(): int                    |
+  +----------------------------------+
+
+
